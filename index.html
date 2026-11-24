@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070c1a">
+  <meta name="description" content="Antirōs — interaktivní fantasy svět se dvěma slunci, devíti planetami, mapou, 12 biomy, 36 kmeny Ayru, bestiářem a e-shopem.">
+  <title>ANTIRŌS | Svět pod dvěma slunci</title>
+  <link rel="stylesheet" href="home-main.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="home-v3.css"></head>
+<body>
+  <a href="#main" class="skip">Přeskočit na obsah</a>
+  <canvas id="starCanvas" aria-hidden="true"></canvas>
+  <header class="topbar" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Antirōs — úvodní stránka">
+        <span class="brand-glyph" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 2 22 13 30 16 22 19 16 30 10 19 2 16 10 13 16 2Z" stroke-width="1.2"/><circle cx="16" cy="16" r="3.5" stroke-width="1"/></svg></span>
+        <span><span class="brand-word">ANTIRŌS</span><span class="brand-small">Svět pod dvěma slunci</span></span>
+      </a>
+      <nav class="navlinks" id="mainNav" aria-label="Hlavní navigace"><a href="vesmir.html">Vesmír</a><a href="atlas.html">Atlas</a><a href="biomy-index.html">Biomy</a><a href="ayru.html">Ayru</a><a href="bestiar.html">Bestiář</a><a href="nyvare.html">Nyvarë</a><a href="kalendar.html">Kalendář</a><a href="kmenovy-test.html">Kmenový test</a><a href="eshop.html">E-shop</a></nav>
+      <div class="navactions">
+        <button type="button" class="bag-btn" id="openCart" aria-label="Otevřít nákupní košík s ukázkovými produkty"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 8h15l1.1 12H3.4L4.5 8Z"/><path d="M8.5 9V6a3.5 3.5 0 0 1 7 0v3"/></svg><span id="cartCount" aria-live="polite">0</span></button>
+        <button type="button" class="menu-btn" id="menuButton" aria-controls="mainNav" aria-expanded="false" aria-label="Otevřít nabídku"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="vesmir">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Galaxie Kyr’shaol · Soustava Thar’kael</p>
+          <h1>Antirōs<span>Svět pod dvěma slunci</span></h1>
+          <p class="hero-desc">Daleko za hranicemi známého vesmíru se rodí příběhy, které Země nikdy nepoznala. <strong>Vstup do světa Ayru, tajemných bytostí, prastarých kmenů a divoké přírody.</strong></p>
+          <div class="actions"><a class="btn btn-primary" href="biomy-index.html">Prozkoumat svět <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m5 12 14 0m-6-6 6 6-6 6"/></svg></a><a class="btn btn-outline" href="atlas.html">Otevřít mapu</a></div>
+          <div class="hero-legend"><div><span>02</span><small>Slunce</small></div><div class="vline"></div><div><span>09</span><small>Planet</small></div><div class="vline"></div><div><span>12</span><small>Biomů</small></div></div>
+        </div>
+        <div class="orbit-side">
+          <div class="orbit-wrap">
+            <canvas id="orbitCanvas" role="img" tabindex="0" aria-label="Animovaná fantasy hvězdná soustava Thar’kael: devět planet obíhá kolem dvou sluncí. Antirōs je třetí planeta. Kliknutím na planetu zobrazíš její pozici."></canvas>
+            <div class="orbit-caption"><span class="dot"></span>Živá hvězdná soustava</div><button class="orbit-toggle" id="orbitToggle" type="button" aria-pressed="false" aria-label="Pozastavit pohyb hvězdné soustavy">Ⅱ Zastavit pohyb</button>
+            <div class="orbit-tip" id="orbitTip" aria-live="polite">Antirōs · třetí planeta</div>
+            <div class="orbit-foot">THAR’KAEL / IX PLANET</div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-cue">Objevuj</div>
+    </section>
+    <section class="intro-band" aria-label="O Antirōsu">
+      <div class="container intro-grid">
+        <article><strong>Dvě hvězdy. Jeden osud.</strong><p>Devět planet v soustavě Thar’kael. Třetí z nich ukrývá Antirōs.</p></article>
+        <article><strong>36 kmenů Ayru</strong><p>Třicet šest jedinečných kmenů, které spojuje pouto s přírodou.</p></article>
+        <article><strong>Svět, který žije</strong><p>Dvanáct biomů, vlastní jazyk Nyvarë, příběhy a legendy.</p></article>
+      </div>
+    </section>
+    <section class="portal-hub"><div class="container"><p class="hub-eyebrow">OBJEVUJ SVĚT ANTI RŌSU</p><h2>Vyber si vlastní cestu</h2><div class="hub-grid"><a href="atlas.html"><span>⌾</span><strong>Interaktivní atlas</strong><small>12 biomů · 5 kontinentů</small></a><a href="kmeny-index.html"><span>◈</span><strong>Kronika Ayru</strong><small>36 kmenů a jejich příběhy</small></a><a href="nyvare.html"><span>✎</span><strong>Jazyk Nyvarë</strong><small>Slovník a výslovnost</small></a><a href="kalendar.html"><span>◷</span><strong>Kalendář</strong><small>480 místních dnů</small></a><a href="kmenovy-test.html"><span>✧</span><strong>Kmenový test</strong><small>Objev svůj herní výsledek</small></a></div></div></section>
+    <section class="section biomes" id="biomy">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Dvanáct tváří jedné planety</span><h2>Prozkoumej biomy Antirōsu</h2><p>Od věčně zelených džunglí přes zářivé oceány až po létající ostrovy. Každý kout planety skrývá vlastní život, tajemství a své kmeny Ayru.</p></div>
+        <div class="biome-grid">
+          <button type="button" class="biome-card" data-biome="0" aria-label="Zobrazit profil biomu Şivrűa" style="--glow:rgba(29,140,83,.38);--icon:#94d8a7"><span class="biome-no">01 / 12</span><span class="biome-icon"><svg viewBox="0 0 32 32"><path d="M16 28V5M16 11C9 2 3 6 4 13c6 5 10 5 12-2ZM16 18c7-10 13-6 12 2-6 4-10 4-12-2ZM16 24c-6-7-12-5-12 0 6 4 9 4 12 0Z"/></svg></span><div class="biome-name">Şivrűa</div><p class="biome-type">Džungle</p></button>
+          <button type="button" class="biome-card" data-biome="1" aria-label="Zobrazit profil biomu Aqçuarïn" style="--glow:rgba(27,118,151,.39);--icon:#83dcea"><span class="biome-no">02 / 12</span><span class="biome-icon"><svg viewBox="0 0 32 32"><path d="M2 18c5-8 9 8 14 0s9 8 14 0M2 25c5-8 9 8 14 0s9 8 14 0M16 3v10m-5-5 5-5 5 5"/></svg></span><div class="biome-name">Aqçuarïn</div><p class="biome-type">Oceán</p></button>
+          <button type="button" class="biome-card" data-biome="2" aria-label="Zobrazit profil biomu Shaqaar" style="--glow:rgba(169,114,51,.32);--icon:#eacb8e"><span class="biome-no">03 / 12</span><span class="biome-icon"><svg viewBox="0 0 32 32"><path d="m1 26 9-13 6 8 6-15 9 20H1ZM2 29h28"/><circle cx="7" cy="7" r="3"/></svg></span><div class="biome-name">Shaqaar</div><p class="biome-type">Poušť</p></button>
+          <button type="button" class="biome-card" data-biome="3" aria-label="Zobrazit profil biomu Luravai" style="--glow:rgba(113,106,190,.37);--icon:#c7bcff"><span class="biome-no">04 / 12</span><span class="biome-icon"><svg viewBox="0 0 32 32"><path d="m3 19 8-9 5 5 7-9 6 13H3ZM8 24h16m-12 4h8M5 5l3-3 3 3"/></svg></span><div class="biome-name">Luravai</div><p class="biome-type">Létající ostrovy</p></button>
+          <button type="button" class="biome-card" data-biome="4" aria-label="Zobrazit profil biomu Muruven" style="--glow:rgba(59,126,102,.38);--icon:#9ccd9d"><span class="biome-no">05 / 12</span><span class="biome-icon"><svg viewBox="0 0 32 32"><path d="M6 27V13M14 27V6M23 27V11M3 26c5-3 9-3 14 0s9 3 12 0M10 13c-4-5-8-1-5 2m9-3c6-5 10-1 7 3M23 17c5-4 8-1 6 2"/></svg></span><div class="biome-name">Muruven</div><p class="biome-type">Mokřady</p></button>
+          <button type="button" class="biome-card" data-biome="5" aria-label="Zobrazit profil biomu Vhalmir" style="--glow:rgba(80,139,184,.33);--icon:#bde7ff"><span class="biome-no">06 / 12</span><span class="biome-icon"><svg viewBox="0 0 32 32"><path d="M16 1v30M3 8l26 16M3 24 29 8M11 5l5 5 5-5M11 27l5-5 5 5M3 14l7-1-1-6M29 18l-7 1 1 6"/></svg></span><div class="biome-name">Vhalmir</div><p class="biome-type">Ledová krajina</p></button>
+          <button type="button" class="biome-card" data-biome="6" aria-label="Zobrazit profil biomu Møthaña" style="--glow:rgba(111,108,143,.34);--icon:#b4bbd6"><span class="biome-no">07 / 12</span><span class="biome-icon"><svg viewBox="0 0 32 32"><path d="M2 27 11 8l5 9 5-14 9 24H2ZM11 8l3 9 2-1m5-13 2 8 2-2"/></svg></span><div class="biome-name">Møthaña</div><p class="biome-type">Hory</p></button>
+          <button type="button" class="biome-card" data-biome="7" aria-label="Zobrazit profil biomu Velrahn" style="--glow:rgba(100,74,157,.41);--icon:#d0b4fb"><span class="biome-no">08 / 12</span><span class="biome-icon"><svg viewBox="0 0 32 32"><path d="M2 27V8L16 2l14 6v19H2Zm8 0V15l6-5 6 5v12M7 8l5 5M25 8l-5 5"/></svg></span><div class="biome-name">Velrahn</div><p class="biome-type">Jeskyně</p></button>
+          <button type="button" class="biome-card" data-biome="8" aria-label="Zobrazit profil biomu Ishvara" style="--glow:rgba(49,142,133,.36);--icon:#8ee3d0"><span class="biome-no">09 / 12</span><span class="biome-icon"><svg viewBox="0 0 32 32"><path d="M16 28V5M16 17C5 14 3 5 3 5c10-1 13 7 13 12Zm0 6C28 21 29 10 29 10c-11 0-13 8-13 13ZM1 29h30"/></svg></span><div class="biome-name">Ishvara</div><p class="biome-type">Tropické ostrovy</p></button>
+          <button type="button" class="biome-card" data-biome="9" aria-label="Zobrazit profil biomu Dravari" style="--glow:rgba(127,135,58,.29);--icon:#d8dba2"><span class="biome-no">10 / 12</span><span class="biome-icon"><svg viewBox="0 0 32 32"><path d="M2 27h28M6 27c0-8 5-10 5-18m6 18c0-12 5-18 8-22M3 21l8-4M18 13l8 3M22 23l7-6"/></svg></span><div class="biome-name">Dravari</div><p class="biome-type">Planiny</p></button>
+          <button type="button" class="biome-card" data-biome="10" aria-label="Zobrazit profil biomu Tzhorin" style="--glow:rgba(180,76,47,.38);--icon:#ffc18c"><span class="biome-no">11 / 12</span><span class="biome-icon"><svg viewBox="0 0 32 32"><path d="M2 27h28L22 12l-6 7-5-8-9 16ZM11 10C7 6 14 4 11 1m9 9c-3-4 5-6 1-9"/></svg></span><div class="biome-name">Tzhorin</div><p class="biome-type">Vulkanická krajina</p></button>
+          <button type="button" class="biome-card" data-biome="11" aria-label="Zobrazit profil biomu Veyran" style="--glow:rgba(102,141,164,.36);--icon:#a8d5ef"><span class="biome-no">12 / 12</span><span class="biome-icon"><svg viewBox="0 0 32 32"><path d="M1 10h19c8 0 8-8 1-8-4 0-6 3-6 5M1 17h26c5 0 5 7 0 7-3 0-4-2-4-3M1 25h13c6 0 6 6 1 6"/></svg></span><div class="biome-name">Veyran</div><p class="biome-type">Větrné stepi</p></button>
+        </div>
+        <p class="biome-foot"><strong>12 biomů</strong> &nbsp;·&nbsp; <strong>36 kmenů</strong> &nbsp;·&nbsp; <strong>1 živoucí svět</strong></p>
+      </div>
+    </section>
+
+    <section class="section atlas-section" id="mapa">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Atlas / 001</span><h2>Mapa živoucí planety</h2><p>Vyber zářící značku, objev biom a otevři jeho záznam. Pět kontinentů, dvanáct krajin — jeden svět.</p></div>
+        <div class="subpage-link"><a href="atlas.html">Přejít do rozšířeného atlasu s přiblížením →</a></div><div class="atlas-frame">
+          <div class="atlas-map" aria-label="Interaktivní koncepční mapa biomů Antirōsu">
+            <div class="map-topline"><span>ANTIRŌS / ATLAS PLANETAE</span><span>✦ 05 KONTINENTŮ</span></div>
+            <svg class="map-art" viewBox="0 0 960 560" role="img" aria-label="Dekorativní mapa pěti fiktivních kontinentů; umístění biomů je prozatím koncepční">
+              <defs>
+                <radialGradient id="mapOcean"><stop stop-color="#173c4b"/><stop offset=".7" stop-color="#102a3c"/><stop offset="1" stop-color="#081b2e"/></radialGradient>
+                <linearGradient id="mapTerrain" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#345a54"/><stop offset=".47" stop-color="#273d48"/><stop offset="1" stop-color="#3f3854"/></linearGradient>
+                <pattern id="mapGrid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#b8d7d2" stroke-opacity=".05" stroke-width="1"/></pattern>
+                <filter id="terrainGlow"><feGaussianBlur stdDeviation="5"/></filter>
+              </defs>
+              <rect width="960" height="560" fill="url(#mapOcean)"/><rect width="960" height="560" fill="url(#mapGrid)"/>
+              <g opacity=".22" fill="none" stroke="#83bdbb"><path d="M-10 130Q150 48 330 127T660 134T980 115"/><path d="M-10 340Q210 235 410 345T980 335"/><path d="M-10 475Q200 410 410 469T980 461"/></g>
+              <g class="coasts" fill="url(#mapTerrain)" stroke="#9bcab9" stroke-width="2.2" stroke-opacity=".58">
+                <path d="M74 77 132 59 176 76 208 59 246 89 260 122 290 142 281 178 263 205 251 245 218 257 188 238 163 252 124 227 111 193 81 183 65 136Z"/>
+                <path d="M368 68 420 50 468 72 492 106 536 117 559 153 537 182 504 177 492 207 453 191 424 203 404 181 379 176 365 135Z"/>
+                <path d="M660 53 720 40 765 68 824 76 860 114 843 152 884 180 864 230 827 252 810 294 768 276 724 285 689 262 660 216 626 180 643 128Z"/>
+                <path d="M112 316 164 297 196 321 236 304 289 332 320 368 301 402 312 445 274 474 223 463 202 493 155 475 127 442 86 430 71 384Z"/>
+                <path d="M484 304 542 279 582 307 620 291 652 327 699 319 739 352 769 396 753 439 707 457 684 499 628 485 603 505 556 478 518 493 495 444 464 420 473 365Z"/>
+                <path d="M833 390 855 401 863 429 846 451 817 436Z"/>
+              </g>
+              <g opacity=".23" fill="none" stroke="#d3d9c7" stroke-width="2">
+                <path d="m105 128 42-31 32 23 40-19 25 38-39 42-27-16-49 15"/><path d="m389 133 49-34 33 15 20 35-43 22"/><path d="m661 150 66-45 34 28 38-3 41 58-50 36-39-13-25 32"/><path d="m105 372 70-44 54 30 35-4 23 50-54 41-41-20-40 30"/><path d="m496 387 73-66 49 44 65-25 35 53-48 51-49-29-52 51"/>
+              </g>
+              <g fill="#ddcda1" fill-opacity=".42"><circle cx="28" cy="43" r="2"/><circle cx="930" cy="44" r="2"/><circle cx="50" cy="517" r="2"/><circle cx="904" cy="518" r="2"/></g>
+              <g transform="translate(889 63)" stroke="#d8c998" fill="none" opacity=".7"><circle r="23" stroke-opacity=".35"/><path d="M0-34V34M-34 0H34M-12-12 12 12M12-12-12 12" stroke-width="1"/><path d="M0-25 6 0 0 25-6 0Z" fill="#d8c998" fill-opacity=".38"/></g>
+            </svg>
+            <div class="map-pins"><button type="button" class="map-pin" data-biome="0" style="--x:18%;--y:28%;--pin:#8fcda2" aria-label="Zobrazit Şivrűa na mapě"><span class="pin-mark">🌿</span><span class="pin-label">Şivrűa</span></button>
+<button type="button" class="map-pin" data-biome="1" style="--x:31%;--y:46%;--pin:#82dcdf" aria-label="Zobrazit Aqçuarïn na mapě"><span class="pin-mark">≈</span><span class="pin-label">Aqçuarïn</span></button>
+<button type="button" class="map-pin" data-biome="2" style="--x:49%;--y:24%;--pin:#f0c390" aria-label="Zobrazit Shaqaar na mapě"><span class="pin-mark">☀</span><span class="pin-label">Shaqaar</span></button>
+<button type="button" class="map-pin" data-biome="3" style="--x:58%;--y:40%;--pin:#cab7f1" aria-label="Zobrazit Luravai na mapě"><span class="pin-mark">✧</span><span class="pin-label">Luravai</span></button>
+<button type="button" class="map-pin" data-biome="4" style="--x:35%;--y:70%;--pin:#8dc6ac" aria-label="Zobrazit Muruven na mapě"><span class="pin-mark">♒</span><span class="pin-label">Muruven</span></button>
+<button type="button" class="map-pin" data-biome="5" style="--x:77%;--y:21%;--pin:#b5deef" aria-label="Zobrazit Vhalmir na mapě"><span class="pin-mark">❄</span><span class="pin-label">Vhalmir</span></button>
+<button type="button" class="map-pin" data-biome="6" style="--x:70%;--y:36%;--pin:#b7bed5" aria-label="Zobrazit Møthaña na mapě"><span class="pin-mark">△</span><span class="pin-label">Møthaña</span></button>
+<button type="button" class="map-pin" data-biome="7" style="--x:65%;--y:71%;--pin:#c2a0df" aria-label="Zobrazit Velrahn na mapě"><span class="pin-mark">◇</span><span class="pin-label">Velrahn</span></button>
+<button type="button" class="map-pin" data-biome="8" style="--x:86%;--y:80%;--pin:#88dcbe" aria-label="Zobrazit Ishvara na mapě"><span class="pin-mark">❀</span><span class="pin-label">Ishvara</span></button>
+<button type="button" class="map-pin" data-biome="9" style="--x:19%;--y:73%;--pin:#d4d29a" aria-label="Zobrazit Dravari na mapě"><span class="pin-mark">✺</span><span class="pin-label">Dravari</span></button>
+<button type="button" class="map-pin" data-biome="10" style="--x:48%;--y:79%;--pin:#e7aa85" aria-label="Zobrazit Tzhorin na mapě"><span class="pin-mark">♨</span><span class="pin-label">Tzhorin</span></button>
+<button type="button" class="map-pin" data-biome="11" style="--x:84%;--y:51%;--pin:#a3cee0" aria-label="Zobrazit Veyran na mapě"><span class="pin-mark">〰</span><span class="pin-label">Veyran</span></button></div>
+            <div class="map-bottomline">SCHEMATICKÝ NÁVRH · POLOHY BIOMŮ NEJSOU SCHVÁLENOU GEOGRAFIÍ</div>
+          </div>
+          <aside class="map-detail" id="mapDetail" aria-live="polite">
+            <div class="mini-constellation">✧ · ✦ · ✧</div>
+            <p class="detail-overline" id="mapNum">BIOM 01 / 12</p>
+            <h3 id="mapName">Şivrűa</h3><p class="map-type" id="mapType">Džungle</p>
+            <div class="detail-line"></div>
+            <p id="mapDescription">Džungle Antirōsu.</p>
+            <div class="detail-label">Místní kmeny Ayru</div>
+            <div class="detail-tribes" id="mapTribes"></div>
+            <button class="btn btn-primary map-open" id="openBiomeDetail" type="button">Otevřít profil biomu <span aria-hidden="true">↗</span></button>
+            <p class="map-caveat">Tato kresba je interaktivní koncepční mapa. Skutečná geografie bude dopracována podle kánonu.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-slab" id="ayru">
+      <div class="container story-grid">
+        <div class="sigil-panel" aria-label="Symbolické vyobrazení pouta Ayru a Kaeli">
+          <svg viewBox="0 0 210 210" fill="none" aria-hidden="true"><circle cx="105" cy="105" r="83" stroke="#d6b981" opacity=".45" stroke-width="1"/><circle cx="105" cy="105" r="69" stroke="#90c9ba" opacity=".55" stroke-width=".8" stroke-dasharray="3 8"/><path d="M105 21 120 77 176 105l-56 28-15 56-15-56-56-28 56-28 15-56Z" stroke="#f0d9aa" stroke-width="1.6"/><circle cx="105" cy="105" r="17" stroke="#a6e3d8" stroke-width="1.6"/><path d="M105 76v12m0 34v12m-29-29h12m34 0h12" stroke="#a6e3d8"/><circle cx="105" cy="105" r="5" fill="#a5e9dc"/><path d="m73 66-14-14m78 14 14-14M73 144l-14 14m78-14 14 14" stroke="#d6b981" stroke-width="1.2"/></svg>
+        </div>
+        <div class="story-content"><span class="eyebrow">Duše planety</span><h2>Ayru. Děti Antirōsu.</h2><p>Na Antirōsu žije národ <strong>Ayru</strong>. Každý z třiceti šesti kmenů je utvářen krajinou, ve které žije, a starobylým poutem mezi životem a přírodou.</p><p>Jejich svět má vlastní řeč — <strong>Nyvarë</strong> — a Kaeli, živou strukturu na konci ocasu, skrze kterou vznikají hluboká spojení. Každá legenda je další nitkou v příběhu planety.</p><div class="story-signoff">„Zde příroda není kulisou. Je součástí každé duše.“</div></div>
+      </div>
+    </section>
+
+    <section class="section tribes-section" id="kmeny">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">36 kmenů / 12 biomů</span><h2>Kronika Ayru</h2><p>Vyhledej kmen, vyfiltruj jeho domovský biom a otevři samostatný profil. Jména a zařazení odpovídají dosavadnímu kánonu.</p></div>
+        <div class="subpage-link"><a href="kmeny-index.html">Otevřít profily všech 36 kmenů →</a></div><div class="archive-tools">
+          <label class="archive-field"><span>Hledat kmen</span><input id="tribeSearch" type="search" placeholder="Např. Eshavë, Meïlë, Ravësh…" autocomplete="off"></label>
+          <label class="archive-field archive-select"><span>Domovský biom</span><select id="tribeBiome"><option value="all">Všech 12 biomů</option></select></label>
+          <div class="archive-count" id="tribeCount" aria-live="polite">36 / 36</div>
+        </div>
+        <div class="tribes-grid" id="tribesGrid"></div>
+        <p class="no-results" id="tribeEmpty" hidden>Žádný kmen neodpovídá hledání. Zkus změnit filtr.</p>
+      </div>
+    </section>
+
+
+    <section class="section bestiary-section" id="bestiar">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Piluin a bytosti divočiny</span><h2>Živoucí bestiář</h2><p>Od známého Piluina po rozpracované návrhy fauny. Rozlišujeme schválený kánon a nápady, které teprve hledají svou podobu.</p></div>
+        <div class="bestiary-tabs" role="group" aria-label="Filtrovat záznamy bestiáře"><button type="button" class="bestiary-filter" data-bestiary="all" aria-pressed="true">Všechny záznamy</button><button type="button" class="bestiary-filter" data-bestiary="canon" aria-pressed="false">Kánon</button><button type="button" class="bestiary-filter" data-bestiary="concept" aria-pressed="false">Návrhy</button></div>
+        <div class="creatures-grid" id="creaturesGrid"></div>
+      </div>
+    </section>
+
+    <section class="shop" id="eshop">
+      <div class="container">
+        <div class="shop-headline"><div><p class="eyebrow">Kousek Antirōsu pro tebe</p><h2>Fantasy e-shop <small style="font-size:.37em;color:#b9d8cd;vertical-align:middle">· NÁHLED</small></h2><p>Poklady inspirované světem Antirōsu: Piluin, legendy, symboly, hvězdy a sběratelské předměty.</p></div><span class="shop-count">KOLEKCE / 001</span></div>
+        <p class="demo-note"><strong>Ukázkový obchod:</strong> produkty i ceny jsou pouze návrhy. Košík funguje, ale reálné objednávky, doprava a platby zatím nejsou propojené.</p>
+        <div class="filters" role="group" aria-label="Filtrovat produkty"><button class="filter" data-filter="all" aria-pressed="true">Vše</button><button class="filter" data-filter="postavicky" aria-pressed="false">Postavičky</button><button class="filter" data-filter="knihy" aria-pressed="false">Knihy a mapy</button><button class="filter" data-filter="sberatelske" aria-pressed="false">Sběratelské</button><button class="filter" data-filter="obleceni" aria-pressed="false">Oblečení</button><button class="filter" data-filter="doplnky" aria-pressed="false">Doplňky</button></div>
+        <div class="products" id="products">
+          <article class="product" data-id="piluin" data-category="postavicky" data-name="Plyšový Piluin" data-price="590" style="--product-glow:rgba(58,143,112,.36)"><div class="product-image"><span class="product-tag">Oblíbenec světa</span><svg viewBox="0 0 260 220" role="img" aria-label="Ilustrace roztomilého modrozeleného Piluina s dvěma tykadly"><defs><radialGradient id="pilBody"><stop stop-color="#b1f1c9"/><stop offset=".65" stop-color="#75c5b4"/><stop offset="1" stop-color="#3b8f96"/></radialGradient><filter id="softGlow"><feGaussianBlur stdDeviation="5"/></filter></defs><ellipse cx="130" cy="199" rx="73" ry="12" fill="#030c14" opacity=".33"/><path d="M96 70Q82 36 83 23M163 70q18-35 14-47" stroke="#5bcbb9" stroke-width="9" stroke-linecap="round"/><circle cx="83" cy="20" r="12" fill="#aaffdb" filter="url(#softGlow)" opacity=".7"/><circle cx="177" cy="20" r="12" fill="#b4fff0" filter="url(#softGlow)" opacity=".7"/><circle cx="83" cy="20" r="8" fill="#dcfff0"/><circle cx="177" cy="20" r="8" fill="#dcfff0"/><path d="M70 104 40 50l60 22M190 104l30-54-60 22" fill="#58b4a3" stroke="#7fe0bd" stroke-width="4"/><path d="M77 89 54 64l42 21m89 4 21-25-42 21" fill="#badbb8"/><ellipse cx="130" cy="131" rx="78" ry="69" fill="url(#pilBody)" stroke="#89ddc1" stroke-width="3"/><path d="M77 162q-36 2-37 22c2 18 27 13 44 0m99-22q35 0 38 20c-1 16-25 14-45 1" fill="#63bca9" stroke="#4ba692" stroke-width="3"/><ellipse cx="98" cy="132" rx="8" ry="11" fill="#102c3a"/><ellipse cx="161" cy="132" rx="8" ry="11" fill="#102c3a"/><circle cx="101" cy="128" r="2.7" fill="#fff"/><circle cx="164" cy="128" r="2.7" fill="#fff"/><path d="M122 149q8 9 16 0" stroke="#246766" stroke-width="3" stroke-linecap="round"/><ellipse cx="81" cy="150" rx="13" ry="6" fill="#f7b4af" opacity=".43"/><ellipse cx="177" cy="150" rx="13" ry="6" fill="#f7b4af" opacity=".43"/><path d="M92 190q-10 16-23 8m99-8q10 16 23 8" stroke="#8cdec2" stroke-width="9" stroke-linecap="round"/><path d="M128 69q-12 30-30 24l-6-19m44-1q26 21 39 13l-5-18" fill="#56ac89" opacity=".7"/></svg></div><div class="product-info"><div class="product-cat">Postavičky · Piluin</div><h3 class="product-name">Plyšový Piluin</h3><p class="product-description">Měkoučký posvátný společník pro klidné večery pod hvězdami.</p><div class="product-bottom"><span class="price">590 Kč</span><button class="add-btn" data-add="piluin">+ Do košíku</button></div></div></article>
+          <article class="product" data-id="atlas" data-category="knihy" data-name="Atlas Antirōsu" data-price="420" style="--product-glow:rgba(164,101,59,.33)"><div class="product-image"><span class="product-tag">Příběhy světů</span><svg viewBox="0 0 260 220" role="img" aria-label="Ilustrace zdobené fantasy knihy Atlas Antirōsu"><ellipse cx="130" cy="196" rx="80" ry="14" fill="#070c17" opacity=".35"/><g transform="rotate(-10 130 108)"><path d="M67 25h120q12 0 12 12v143q0 11-12 11H67q-11 0-11-11V36q0-11 11-11Z" fill="#9e6549" stroke="#ddbd85" stroke-width="4"/><path d="M72 25v166" stroke="#e0b877" stroke-width="8"/><path d="M80 30h108q5 0 5 5v144q0 5-5 5H80V30Z" fill="#26464d" stroke="#dfb97e" stroke-width="2"/><path d="M93 45h82v123H93z" stroke="#bd9b69" stroke-width="1" opacity=".8"/><circle cx="135" cy="102" r="38" fill="none" stroke="#dfc593" stroke-width="1.4"/><circle cx="135" cy="102" r="26" fill="none" stroke="#b4cbbe" stroke-width="1"/><path d="m135 63 13 26 28 13-28 13-13 27-13-27-28-13 28-13 13-26Z" fill="none" stroke="#e9d4a4" stroke-width="1.5"/><circle cx="135" cy="102" r="7" fill="#e7c994"/><path d="M106 153h58M115 162h40" stroke="#d0ad76" stroke-width="2"/><path d="M83 41v127m0-125 6 5m-6 21 6 5m-6 21 6 5m-6 21 6 5m-6 21 6 5" stroke="#e9c98e" opacity=".5"/></g></svg></div><div class="product-info"><div class="product-cat">Knihy · Svět Antirōsu</div><h3 class="product-name">Atlas Antirōsu</h3><p class="product-description">Ilustrovaný průvodce biomy, legendami a bytostmi planety.</p><div class="product-bottom"><span class="price">420 Kč</span><button class="add-btn" data-add="atlas">+ Do košíku</button></div></div></article>
+          <article class="product" data-id="karty" data-category="sberatelske" data-name="Sběratelské karty Ayru" data-price="249" style="--product-glow:rgba(77,103,171,.35)"><div class="product-image"><span class="product-tag">Sběratelská edice</span><svg viewBox="0 0 260 220" role="img" aria-label="Ilustrace tří fantasy sběratelských karet"><ellipse cx="130" cy="202" rx="89" ry="10" fill="#070c17" opacity=".30"/><g transform="rotate(-15 95 105)"><rect x="48" y="39" width="94" height="143" rx="7" fill="#29394f" stroke="#d3af78" stroke-width="4"/><rect x="56" y="47" width="78" height="127" rx="3" fill="#304e5e" stroke="#c9ab73"/><circle cx="95" cy="97" r="23" fill="none" stroke="#95d4ce"/><path d="m95 76 8 16 18 5-18 5-8 17-8-17-18-5 18-5Z" fill="#83c3c7"/></g><g transform="rotate(16 173 108)"><rect x="126" y="34" width="95" height="146" rx="7" fill="#45304b" stroke="#d8ad72" stroke-width="4"/><rect x="134" y="42" width="79" height="130" rx="3" fill="#5c4760" stroke="#ceb482"/><path d="m174 66 28 53-28 30-28-30Z" stroke="#ead0ab" fill="none"/><circle cx="174" cy="107" r="11" fill="#dbb3b0"/></g><rect x="86" y="29" width="95" height="151" rx="7" fill="#1b454c" stroke="#ebd59b" stroke-width="5"/><rect x="94" y="37" width="79" height="135" rx="3" fill="#224c55" stroke="#b89d71"/><circle cx="133" cy="100" r="31" fill="none" stroke="#b3d7d1" stroke-width="1.3"/><path d="m133 67 11 22 22 11-22 11-11 22-11-22-22-11 22-11Z" stroke="#e5cb9a" fill="none" stroke-width="2"/><circle cx="133" cy="100" r="7" fill="#dce8c8"/><path d="M105 151h55" stroke="#d8c198"/></svg></div><div class="product-info"><div class="product-cat">Sběratelské · Ayru</div><h3 class="product-name">Sběratelské karty Ayru</h3><p class="product-description">Fantazijní sada karet inspirovaná kmeny a jejich symboly.</p><div class="product-bottom"><span class="price">249 Kč</span><button class="add-btn" data-add="karty">+ Do košíku</button></div></div></article>
+          <article class="product" data-id="tricko" data-category="obleceni" data-name="Tričko Dvě slunce" data-price="649" style="--product-glow:rgba(109,93,162,.32)"><div class="product-image"><svg viewBox="0 0 260 220" role="img" aria-label="Ilustrace tmavého trička se dvěma fantasy slunci"><ellipse cx="130" cy="200" rx="85" ry="12" fill="#070c17" opacity=".3"/><path d="M93 39q37 19 74 0l38 20 30 51-37 20-18-24v92H80v-92l-18 24-37-20 30-51 38-20Z" fill="#222c43" stroke="#56627b" stroke-width="4"/><path d="M94 39c7 20 64 21 72 0" stroke="#82889b" stroke-width="5"/><circle cx="114" cy="107" r="15" fill="#e3ac71"/><circle cx="146" cy="105" r="10" fill="#aee2d3"/><ellipse cx="131" cy="110" rx="41" ry="29" fill="none" stroke="#dfc18b" opacity=".72" stroke-width="1.3"/><ellipse cx="131" cy="110" rx="53" ry="39" fill="none" stroke="#8fa5ae" opacity=".6" stroke-dasharray="3 6"/><path d="M99 156h62" stroke="#dec99f" stroke-width="1"/><text x="130" y="166" text-anchor="middle" font-family="Georgia" letter-spacing="4" font-size="8" fill="#e8cc99">ANTIRŌS</text></svg></div><div class="product-info"><div class="product-cat">Oblečení · Hvězdná kolekce</div><h3 class="product-name">Tričko Dvě slunce</h3><p class="product-description">Temný motiv se soustavou Thar’kael a dvěma hvězdami.</p><div class="product-bottom"><span class="price">649 Kč</span><button class="add-btn" data-add="tricko">+ Do košíku</button></div></div></article>
+          <article class="product" data-id="plakat" data-category="knihy" data-name="Plakát Thar’kael" data-price="290" style="--product-glow:rgba(130,84,120,.30)"><div class="product-image"><svg viewBox="0 0 260 220" role="img" aria-label="Ilustrace plakátu s planetami a dvěma slunci"><rect x="57" y="18" width="146" height="184" rx="2" fill="#151d34" stroke="#c2a273" stroke-width="6"/><rect x="66" y="27" width="128" height="165" fill="#111d34"/><circle cx="130" cy="100" r="39" fill="none" stroke="#b8a077" stroke-width="1"/><circle cx="130" cy="100" r="53" fill="none" stroke="#71818e" stroke-width="1"/><circle cx="130" cy="100" r="66" fill="none" stroke="#71818e" stroke-dasharray="2 5" stroke-width=".8"/><circle cx="119" cy="100" r="13" fill="#e6b26e"/><circle cx="138" cy="100" r="8" fill="#b9e6d7"/><circle cx="165" cy="83" r="6" fill="#5bd6b4"/><circle cx="89" cy="74" r="4" fill="#c0b7e9"/><circle cx="92" cy="145" r="5" fill="#cea18b"/><path d="M93 166h74" stroke="#ccb488"/><text x="130" y="180" text-anchor="middle" font-size="8" font-family="Georgia" fill="#e6cba4" letter-spacing="2">THAR’KAEL</text><path d="M70 44h3m96 0h3m-102 99h3m96 0h3" stroke="#efd6b0"/></svg></div><div class="product-info"><div class="product-cat">Knihy a mapy · Dekorace</div><h3 class="product-name">Plakát Thar’kael</h3><p class="product-description">Hvězdná soustava dvou sluncí jako fantasy plakát.</p><div class="product-bottom"><span class="price">290 Kč</span><button class="add-btn" data-add="plakat">+ Do košíku</button></div></div></article>
+          <article class="product" data-id="amulet" data-category="doplnky" data-name="Amulet Kaeli" data-price="199" style="--product-glow:rgba(37,128,140,.34)"><div class="product-image"><svg viewBox="0 0 260 220" role="img" aria-label="Ilustrace magického amuletu ve tvaru Kaeli"><ellipse cx="130" cy="196" rx="66" ry="10" fill="#070c17" opacity=".3"/><path d="M78 23C82 82 100 96 130 98c30-2 48-16 52-75" fill="none" stroke="#bd9670" stroke-width="5"/><path d="M78 23c8 52 21 74 52 75 31-1 44-23 52-75" fill="none" stroke="#edd6a0" stroke-width="1.4"/><circle cx="130" cy="100" r="11" fill="#cb9f70" stroke="#e6d39d" stroke-width="3"/><path d="M130 104c-45 9-58 53-28 72 14 9 29 0 28-13 0 13 14 22 28 13 30-19 17-63-28-72Z" fill="#245d64" stroke="#dec18a" stroke-width="5"/><path d="M130 117c-28 8-38 38-19 48m19-48c28 8 38 38 19 48" stroke="#91dfd7" stroke-width="3"/><circle cx="130" cy="151" r="11" fill="#75e3d2"/><circle cx="130" cy="151" r="5" fill="#e1fff0"/></svg></div><div class="product-info"><div class="product-cat">Doplňky · Symboly</div><h3 class="product-name">Amulet Kaeli</h3><p class="product-description">Symbol pouta, které propojuje život na Antirōsu.</p><div class="product-bottom"><span class="price">199 Kč</span><button class="add-btn" data-add="amulet">+ Do košíku</button></div></div></article>
+        </div>
+        <p class="shop-end">* Uvedené výrobky, jejich vzhled a ceny slouží jen jako inspirace pro budoucí nabídku Antirōsu.</p>
+      </div>
+    </section>
+    <section class="ending"><div class="container"><div class="spark">✧</div><h2>Každý vesmír začíná jediným příběhem.</h2><p>Antirōs je fantasy svět, který roste s každou legendou, novým tvorem a objeveným koutem mapy.</p><a href="#top" class="btn btn-outline">Zpátky ke hvězdám ↑</a></div></section>
+  </main>
+  <footer><div class="container footer-content"><b>ANTIRŌS</b><span>© 2026 Antirōs · Autorský fantasy svět · <a href="nyvare.html">Nyvarë</a> · <a href="kalendar.html">Kalendář</a></span><nav class="footer-links" aria-label="Odkazy v zápatí"><a href="#mapa">Mapa</a><a href="#kmeny">Kmeny</a><a href="#bestiar">Bestiář</a><a href="#eshop">E-shop</a><a href="#top">Nahoru ↑</a></nav></div></footer>
+
+  <dialog class="lore-dialog" id="loreDialog" aria-labelledby="loreTitle">
+    <div class="lore-dialog-head"><span class="lore-overline">ANTIRŌS · ENCYKLOPEDIE</span><button class="icon-button" type="button" id="loreClose" aria-label="Zavřít profil">×</button></div>
+    <div class="lore-content" id="loreContent"></div>
+  </dialog>
+  <div id="overlay" class="overlay" hidden></div>
+  <aside id="cartDrawer" class="drawer" role="dialog" aria-modal="true" aria-labelledby="cartHeading" hidden>
+    <div class="drawer-head"><h2 id="cartHeading">Ukázkový košík – bez možnosti nákupu</h2><button type="button" class="icon-button" id="closeCart" aria-label="Zavřít košík">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="drawer-foot"><div class="cart-subtotal"><span>Celkem</span><strong id="cartTotal">0 Kč</strong></div><p class="small-disclaimer">Ukázkový košík. Nejde o skutečnou objednávku a žádná platba se neprovádí.</p><button type="button" class="btn btn-primary checkout-btn" id="checkout">Pokračovat k objednávce</button></div>
+  </aside>
+  <div id="demoModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="demoModalHeading" hidden><div class="modal-star">✧</div><h2 id="demoModalHeading">E-shop se připravuje</h2><p>Toto je funkční ukázka designu a košíku. Aby šlo opravdu nakupovat, bude potřeba připojit objednávky, dopravu a bezpečnou platební bránu.</p><button type="button" class="btn btn-primary" id="closeModal">Rozumím</button></div>
+  <div class="toast" role="status" aria-live="polite" id="toast">Produkt přidán do košíku</div>
+<script src="home-main.js" defer></script>
+</body>
+</html>

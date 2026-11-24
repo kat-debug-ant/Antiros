@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Eshavë",
+    "slug": "eshave",
+    "biome": "sivrua"
+  },
+  {
+    "name": "Noruai",
+    "slug": "noruai",
+    "biome": "sivrua"
+  },
+  {
+    "name": "Tëlyra",
+    "slug": "telyra",
+    "biome": "sivrua"
+  },
+  {
+    "name": "Meïlë",
+    "slug": "meile",
+    "biome": "aquarin"
+  },
+  {
+    "name": "Oqîrra",
+    "slug": "oqirra",
+    "biome": "aquarin"
+  },
+  {
+    "name": "Uraqo",
+    "slug": "uraqo",
+    "biome": "aquarin"
+  },
+  {
+    "name": "Aşurë",
+    "slug": "asure",
+    "biome": "shaqaar"
+  },
+  {
+    "name": "Khevai",
+    "slug": "khevai",
+    "biome": "shaqaar"
+  },
+  {
+    "name": "Atąro",
+    "slug": "ataro",
+    "biome": "shaqaar"
+  },
+  {
+    "name": "Påmyrė",
+    "slug": "pamyre",
+    "biome": "luravai"
+  },
+  {
+    "name": "Alqëri",
+    "slug": "alqeri",
+    "biome": "luravai"
+  },
+  {
+    "name": "Awyarai",
+    "slug": "awyarai",
+    "biome": "luravai"
+  },
+  {
+    "name": "Evrashi",
+    "slug": "evrashi",
+    "biome": "muruven"
+  },
+  {
+    "name": "Talumo",
+    "slug": "talumo",
+    "biome": "muruven"
+  },
+  {
+    "name": "Nqavë",
+    "slug": "nqave",
+    "biome": "muruven"
+  },
+  {
+    "name": "Qirnau",
+    "slug": "qirnau",
+    "biome": "vhalmir"
+  },
+  {
+    "name": "Sëlyon",
+    "slug": "selyon",
+    "biome": "vhalmir"
+  },
+  {
+    "name": "Avrûq",
+    "slug": "avruq",
+    "biome": "vhalmir"
+  },
+  {
+    "name": "Ravësh",
+    "slug": "ravesh",
+    "biome": "mothana"
+  },
+  {
+    "name": "Onqari",
+    "slug": "onqari",
+    "biome": "mothana"
+  },
+  {
+    "name": "Tëlqû",
+    "slug": "telqu",
+    "biome": "mothana"
+  },
+  {
+    "name": "Umorë",
+    "slug": "umore",
+    "biome": "velrahn"
+  },
+  {
+    "name": "Qeïsha",
+    "slug": "qeisha",
+    "biome": "velrahn"
+  },
+  {
+    "name": "Varnu",
+    "slug": "varnu",
+    "biome": "velrahn"
+  },
+  {
+    "name": "Lomai",
+    "slug": "lomai",
+    "biome": "ishvara"
+  },
+  {
+    "name": "Eshqë",
+    "slug": "eshqe",
+    "biome": "ishvara"
+  },
+  {
+    "name": "Pavûra",
+    "slug": "pavura",
+    "biome": "ishvara"
+  },
+  {
+    "name": "Sëranu",
+    "slug": "seranu",
+    "biome": "dravari"
+  },
+  {
+    "name": "Wertuû",
+    "slug": "wertuu",
+    "biome": "dravari"
+  },
+  {
+    "name": "Pawmia",
+    "slug": "pawmia",
+    "biome": "dravari"
+  },
+  {
+    "name": "Haoru",
+    "slug": "haoru",
+    "biome": "tzhorin"
+  },
+  {
+    "name": "Ishnëq",
+    "slug": "ishneq",
+    "biome": "tzhorin"
+  },
+  {
+    "name": "Kavûri",
+    "slug": "kavuri",
+    "biome": "tzhorin"
+  },
+  {
+    "name": "Savaï",
+    "slug": "savai",
+    "biome": "veyran"
+  },
+  {
+    "name": "Përona",
+    "slug": "perona",
+    "biome": "veyran"
+  },
+  {
+    "name": "Yarqel",
+    "slug": "yarqel",
+    "biome": "veyran"
+  }
+]

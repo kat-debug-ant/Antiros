@@ -1,0 +1,16 @@
+/* Home v3 – additive visual refresh preserving the original JavaScript */
+.navlinks{gap:clamp(8px,1vw,15px)}.navlinks a{font-size:clamp(9px,.73vw,11px);letter-spacing:.06em}.portal-hub{padding:32px 0 72px;background:linear-gradient(180deg,#0c1423,rgba(15,37,45,.45))}.portal-hub h2{font:normal clamp(2rem,4vw,3.2rem) Georgia,serif;margin:7px 0 20px;color:#efe4d0}.hub-eyebrow{color:#9be0d2;letter-spacing:.2em;font-size:11px}.hub-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.hub-grid a{display:flex;flex-direction:column;gap:8px;min-height:145px;padding:18px;border:1px solid #ffffff29;background:#1124339c;border-radius:13px;transition:.2s}.hub-grid a:hover{border-color:#c9b38f;transform:translateY(-3px)}.hub-grid span{font-size:29px;color:#dfc89c}.hub-grid strong{font:normal 1.15rem Georgia,serif;color:#f8f1e6}.hub-grid small{color:#b6c9cf;font-size:.75rem}.subpage-link{margin:0 0 20px}.subpage-link a{font-size:.85rem;color:#9febd7;text-decoration:underline;text-decoration-color:#9febd777;text-underline-offset:4px}
+.biome-card{background-size:cover;background-position:center;min-height:196px;text-shadow:0 2px 13px #000}.biome-card::before{background:linear-gradient(0deg,#07101bf0 0%,#0a172e66 82%),radial-gradient(circle at 88% 13%,var(--glow),transparent 55%);opacity:1}.biome-card::after{display:none}.biome-card .biome-name,.biome-card .biome-type,.biome-card .biome-no,.biome-card .biome-icon{position:relative;z-index:1}
+.biome-card[data-biome="0"]{background-image:linear-gradient(0deg,#07121de0,transparent 80%),url("sivrua.webp")}
+.biome-card[data-biome="1"]{background-image:linear-gradient(0deg,#07121de0,transparent 80%),url("aquarin.webp")}
+.biome-card[data-biome="2"]{background-image:linear-gradient(0deg,#07121de0,transparent 80%),url("shaqaar.webp")}
+.biome-card[data-biome="3"]{background-image:linear-gradient(0deg,#07121de0,transparent 80%),url("luravai.webp")}
+.biome-card[data-biome="4"]{background-image:linear-gradient(0deg,#07121de0,transparent 80%),url("muruven.webp")}
+.biome-card[data-biome="5"]{background-image:linear-gradient(0deg,#07121de0,transparent 80%),url("vhalmir.webp")}
+.biome-card[data-biome="6"]{background-image:linear-gradient(0deg,#07121de0,transparent 80%),url("mothana.webp")}
+.biome-card[data-biome="7"]{background-image:linear-gradient(0deg,#07121de0,transparent 80%),url("velrahn.webp")}
+.biome-card[data-biome="8"]{background-image:linear-gradient(0deg,#07121de0,transparent 80%),url("ishvara.webp")}
+.biome-card[data-biome="9"]{background-image:linear-gradient(0deg,#07121de0,transparent 80%),url("dravari.webp")}
+.biome-card[data-biome="10"]{background-image:linear-gradient(0deg,#07121de0,transparent 80%),url("tzhorin.webp")}
+.biome-card[data-biome="11"]{background-image:linear-gradient(0deg,#07121de0,transparent 80%),url("veyran.webp")}
+@media(max-width:1080px){.hub-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:800px){.hub-grid{grid-template-columns:repeat(2,1fr)}.navlinks a{font-size:13px}}@media(max-width:480px){.hub-grid{grid-template-columns:1fr 1fr}.hub-grid a{padding:13px;min-height:126px}.hub-grid strong{font-size:1rem}}@media(prefers-reduced-motion:reduce){.hub-grid a{transition:none}}

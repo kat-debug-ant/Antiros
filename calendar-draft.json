@@ -1,0 +1,86 @@
+[
+  {
+    "cycle": 1,
+    "name": "Eşarën",
+    "pronunciation": "eš-a-ren",
+    "length": 40,
+    "status": "Neschválený návrh"
+  },
+  {
+    "cycle": 2,
+    "name": "Aqëvara",
+    "pronunciation": "ak-ve-va-ra",
+    "length": 40,
+    "status": "Neschválený návrh"
+  },
+  {
+    "cycle": 3,
+    "name": "Tir’avel",
+    "pronunciation": "tir-a-vel",
+    "length": 40,
+    "status": "Neschválený návrh"
+  },
+  {
+    "cycle": 4,
+    "name": "Phaïru",
+    "pronunciation": "fa-jí-ru",
+    "length": 40,
+    "status": "Neschválený návrh"
+  },
+  {
+    "cycle": 5,
+    "name": "Veyrūn",
+    "pronunciation": "vej-run",
+    "length": 40,
+    "status": "Neschválený návrh"
+  },
+  {
+    "cycle": 6,
+    "name": "Nëm’ashara",
+    "pronunciation": "nem-a-ša-ra",
+    "length": 40,
+    "status": "Neschválený návrh"
+  },
+  {
+    "cycle": 7,
+    "name": "Lôryen",
+    "pronunciation": "lo-ri-en",
+    "length": 40,
+    "status": "Neschválený návrh"
+  },
+  {
+    "cycle": 8,
+    "name": "Uqerâ",
+    "pronunciation": "u-ke-ra",
+    "length": 40,
+    "status": "Neschválený návrh"
+  },
+  {
+    "cycle": 9,
+    "name": "Qharîs",
+    "pronunciation": "ka-rís",
+    "length": 40,
+    "status": "Neschválený návrh"
+  },
+  {
+    "cycle": 10,
+    "name": "Sëvraq",
+    "pronunciation": "se-vrak",
+    "length": 40,
+    "status": "Neschválený návrh"
+  },
+  {
+    "cycle": 11,
+    "name": "Mûranei",
+    "pronunciation": "mu-ra-nej",
+    "length": 40,
+    "status": "Neschválený návrh"
+  },
+  {
+    "cycle": 12,
+    "name": "Esh’thara",
+    "pronunciation": "eš-ta-ra",
+    "length": 40,
+    "status": "Neschválený návrh"
+  }
+]
