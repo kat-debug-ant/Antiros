@@ -34,8 +34,15 @@
           <div class="actions"><a class="btn btn-primary" href="biomy-index.html">Prozkoumat svět <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m5 12 14 0m-6-6 6 6-6 6"/></svg></a><a class="btn btn-outline" href="atlas.html">Otevřít mapu</a></div>
           <div class="hero-legend"><div><span>02</span><small>Slunce</small></div><div class="vline"></div><div><span>09</span><small>Planet</small></div><div class="vline"></div><div><span>12</span><small>Biomů</small></div></div>
         </div>
-        <div class="orbit-side">
-          <div class="orbit-wrap">
+<div class="orbit-side">
+    <iframe
+        src="tharkael-animace.html"
+        title="Soustava Thar’kael"
+        width="100%"
+        height="750"
+        style="border:0;">
+    </iframe>
+    <div class="orbit-wrap" style="position:absolute; visibility:hidden; pointer-events:none;">
             <canvas id="orbitCanvas" role="img" tabindex="0" aria-label="Animovaná fantasy hvězdná soustava Thar’kael: devět planet obíhá kolem dvou sluncí. Antirōs je třetí planeta. Kliknutím na planetu zobrazíš její pozici."></canvas>
             <div class="orbit-caption"><span class="dot"></span>Živá hvězdná soustava</div><button class="orbit-toggle" id="orbitToggle" type="button" aria-pressed="false" aria-label="Pozastavit pohyb hvězdné soustavy">Ⅱ Zastavit pohyb</button>
             <div class="orbit-tip" id="orbitTip" aria-live="polite">Antirōs · třetí planeta</div>
@@ -45,12 +52,6 @@
       </div>
       <div class="scroll-cue">Objevuj</div>
     </section> 
-<iframe
-  src="tharkael-animace.html"
-  width="100%"
-  height="1250"
-  style="border:0;">
-</iframe>
     <section class="intro-band" aria-label="O Antirōsu">
       <div class="container intro-grid">
         <article><strong>Dvě hvězdy. Jeden osud.</strong><p>Devět planet v soustavě Thar’kael. Třetí z nich ukrývá Antirōs.</p></article>
