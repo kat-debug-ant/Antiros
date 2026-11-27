@@ -203,5 +203,60 @@
   <div id="demoModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="demoModalHeading" hidden><div class="modal-star">✧</div><h2 id="demoModalHeading">E-shop se připravuje</h2><p>Toto je funkční ukázka designu a košíku. Aby šlo opravdu nakupovat, bude potřeba připojit objednávky, dopravu a bezpečnou platební bránu.</p><button type="button" class="btn btn-primary" id="closeModal">Rozumím</button></div>
   <div class="toast" role="status" aria-live="polite" id="toast">Produkt přidán do košíku</div>
 <script src="home-main.js" defer></script>
+
+<style>
+.antiros-twinkle {
+    position: fixed;
+    border-radius: 50%;
+    background: white;
+    pointer-events: none;
+    box-shadow: 0 0 6px #b8d9ff;
+    animation: antirosTwinkle 4s ease-in-out infinite;
+}
+
+@keyframes antirosTwinkle {
+    0%, 100% { opacity: 0.15; }
+    45% { opacity: 0.95; }
+    70% { opacity: 0.35; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .antiros-twinkle {
+        animation: none;
+    }
+}
+</style>
+
+<script>
+const starLayer = document.createElement("div");
+
+starLayer.style.cssText = `
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+`;
+
+starLayer.setAttribute("aria-hidden", "true");
+document.body.appendChild(starLayer);
+
+for (let i = 0; i < 80; i++) {
+    const star = document.createElement("span");
+    const size = Math.random() * 2 + 1;
+
+    star.className = "antiros-twinkle";
+    star.style.width = size + "px";
+    star.style.height = size + "px";
+    star.style.left = Math.random() * 100 + "%";
+    star.style.top = Math.random() * 100 + "%";
+    star.style.animationDuration =
+        (Math.random() * 5 + 3) + "s";
+    star.style.animationDelay =
+        -(Math.random() * 8) + "s";
+
+    starLayer.appendChild(star);
+}
+</script>
 </body>
 </html>
